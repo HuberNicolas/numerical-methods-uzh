@@ -3,7 +3,7 @@ function runTests()
 %   function. Works in MATLAB and GNU Octave. Exits with an error if a check fails.
 %
 %   Usage (from the repository root):
-%           addpath('tests'); runTests
+%           cd tests; runTests
 
     root = fileparts(fileparts(mfilename('fullpath')));
     for k = 2:9
