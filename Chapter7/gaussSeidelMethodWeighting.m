@@ -37,10 +37,10 @@ function [x,it] = gaussSeidelMethodWeighting(A,b,x0,itMax,eps,w)
             for k = 1:n
                 if j ~= k % skip x1 in first equation, x2 in second, ...
                     sum = sum + x(k).*A(j,k);
-                    x(j) =  (1-w)*x(j) +  ((w ./ A(j,j)) .* (b(j) - sum));
                 end
             end
-       
+            x(j) =  (1-w)*x(j) +  ((w ./ A(j,j)) .* (b(j) - sum));
+
         end
         % Compute new residual & error
         r = b - A * x;
