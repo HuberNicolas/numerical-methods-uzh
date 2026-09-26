@@ -32,7 +32,6 @@ yeval3 = interp1q(x,y,xevalQuick); % integrated Matlab solution, faster
 % quadratic Spline interpolation
 S1 = quadraticSplineInterpolation(x,y);
 S2 = quadraticSplineInterpolation2(x,y);
-%yeval5 = quadraticSplineInterpolationQuarteroni(x,y,xeval) % Copyright by QUARTERONI
 
 
 clc; clear all; close all;
@@ -46,7 +45,6 @@ x = linspace(a,b,m);
 x = x';
 y = f(x);
 coeff1 = qubicSplineInterpolation(x,y)
-coeff2 = naturalspline(x,y) % solution, not 100% clear
 pp = mkpp(x,coeff1);
 xq = x(1):0.01:x(end);   
 plot(xq,ppval(pp,xq),x,y,'X');
