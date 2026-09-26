@@ -1,0 +1,6 @@
+# MATLAB autosave and editor files
+*.asv
+*.m~
+
+# OS files
+.DS_Store
