@@ -55,7 +55,7 @@ function [S] = quadraticSplineInterpolation(x,y)
     %% Plotting
     pp = mkpp(x,S);
     xq = x(1):0.01:x(end);   
-    plot(xq,ppval(pp,xq),x,y,'X');
+    plot(xq,ppval(pp,xq),x,y,'x');
 end  
 
     

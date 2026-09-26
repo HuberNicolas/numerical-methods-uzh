@@ -29,7 +29,7 @@ yeval1 = lagrangianInterpolation(x,y,xeval);
 yeval2 = lagrangianInterpolationBarycentric(x,y,xeval);
 yeval3 = monomialInterpolation(x,y,xeval);
 %% Plotting
-plot(xeval, yeval1,'rO',xeval,yeval2,'bX', xeval,yeval3,'g*')
+plot(xeval, yeval1,'ro',xeval,yeval2,'bx', xeval,yeval3,'g*')
 
 
 %% Plotting
