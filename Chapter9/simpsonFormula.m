@@ -14,7 +14,7 @@ function [I] = simpsonFormula(fun,a,b)
     m = (a+b)./2; % midpoint
     
     %% Computation
-    I = (b-a).* ((fun(a)+4.*f(m)+fun(b))./6);
+    I = (b-a).* ((fun(a)+4.*fun(m)+fun(b))./6);
 end  
 
     
