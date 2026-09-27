@@ -20,7 +20,7 @@ function [y_eval] = lagrangianInterpolation(x,y,xeval)
     end
     
     %% Initialisation
-    n = szy; % number of datapoints
+    n = szy(1); % number of datapoints
     sz = size(xeval); % number of points that need to be evaluated
     
     %% Computation
